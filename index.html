@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberlife Yazılım</title>
+    <style>
+        /* Genel sayfa stilleri */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Parıltı efekti */
+        .sparkles {
+            position: fixed;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .sparkles.left {
+            left: 0;
+        }
+
+        .sparkles.right {
+            right: 0;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: sparkle 3s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.5);
+                opacity: 0;
+                top: 100vh;
+            }
+        }
+
+        /* Başlık ve içerik */
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            margin: 20px auto;
+        }
+
+        header h1 {
+            color: #4dabf7;
+            font-size: 2.5em;
+            margin: 10px 0 5px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #bfbfbf;
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        /* Ana içerik */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .game {
+            background-color: #2e2e2e;
+            width: 100%;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #4dabf7;
+        }
+
+        .game:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 139, 247, 0.3);
+        }
+
+        .game h2 {
+            color: #4dabf7;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .game p {
+            font-size: 1em;
+            color: #d9d9d9;
+        }
+
+        .download-links {
+            margin-top: 10px;
+        }
+
+        .download-links a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .download-links a:hover {
+            background-color: #0066cc;
+        }
+
+        /* Alt kısım */
+        footer {
+            background-color: #1a1a1a;
+            padding: 15px;
+            text-align: center;
+            color: #bfbfbf;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #4dabf7;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Parıltı efektini oluşturan divler -->
+    <div class="sparkles left"></div>
+    <div class="sparkles right"></div>
+
+    <header>
+        <h1>Cyberlife Yazılım</h1>
+        <p>En popüler oyunlar için en iyi yazılımları keşfedin!</p>
+    </header>
+
+    <div class="container">
+        <!-- Counter Strike 2 -->
+        <div class="game">
+            <h2>Counter Strike 2</h2>
+            <p>Counter Strike 2 için güncel hileyi indirin ve oyunda avantaj kazanın.</p>
+            <div class="download-links">
+                <a href="https://cdn.discordapp.com/attachments/1302364459641212944/1302366117897044099/CyberLife.zip?ex=6727da77&is=672688f7&hm=f409732d2b7e90c7d252bda9e560a05325d08cbe7b8f3bb17aef8eb162c916cd&" target="_blank">Hileyi İndir</a>
+            </div>
+        </div>
+
+        <!-- Valorant -->
+        <div class="game">
+            <h2>Valorant</h2>
+            <p>Valorant için iki farklı hile mevcuttur. SkinChanger ve Internal hilelerini aşağıdan indirebilirsiniz.</p>
+            <div class="download-links">
+                <a href="https://github.com/assasinsbat/ready/raw/main/ST_SkinChanger_Free.zip" target="_blank">SkinChanger İndir</a>
+                <a href="https://github.com/assasinsbat/ready/raw/main/ST_Internal_Free.zip" target="_blank">Internal İndir</a>
+            </div>
+        </div>
+
+        <!-- FiveM -->
+        <div class="game">
+            <h2>FiveM</h2>
+            <p>FiveM için en güncel hileyi kullanarak oyun içinde avantaj elde edin.</p>
+            <div class="download-links">
+                <a href="https://www.artmoney.ru/e_download_se.htm" target="_blank">Hileyi İndir</a>
+            </div>
+        </div>
+
+        <!-- MTA (Multi Theft Auto) -->
+        <div class="game">
+            <h2>MTA (Multi Theft Auto)</h2>
+            <p>MTA için en iyi hileleri buradan indirebilirsiniz.</p>
+            <div class="download-links">
+                <a href="https://mega.nz/file/gQIW2C4Z#Iohm-E9UT5Z8GF5y9ZfGh6AUMywMKSLd1RdLh2iZjVM" target="_blank">Hileyi İndir</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alt kısım -->
+    <footer>
+        <p>© Cyberlife Yazılım - Tüm hakları saklıdır.</p>
+        <div class="footer-links">
+            <a href="https://www.youtube.com/@cyberlife_yazilim" target="_blank">YouTube</a> |
+            <a href="https://discord.gg/mSHyGr5qA6" target="_blank">Discord</a>
+        </div>
+    </footer>
+
+    <script>
+        // Parıltı efektini oluşturma
+        function createSparkles() {
+            const leftSparkles = document.querySelector('.sparkles.left');
+            const rightSparkles = document.querySelector('.sparkles.right');
+            for (let i = 0; i < 50; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.classList.add('sparkle');
+                sparkle.style.left = `${Math.random() * 100}px`;
+                sparkle.style.top = `${Math.random() * 100}vh`;
+                sparkle.style.animationDuration = `${Math.random() * 2 + 1}s`;
+                sparkle.style.animationDelay = `${Math.random() * 5}s`;
+                (i % 2 === 0 ? leftSparkles : rightSparkles).appendChild(sparkle);
+            }
+        }
+
+        createSparkles();
+    </script>
+</body>
+</html>
